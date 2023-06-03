@@ -8,6 +8,11 @@
     src: url(/assets/font/gilroy/Gilroy-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: 'Gilroy-Medium';
+    src: url(/assets/font/gilroy/Gilroy-Medium.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,7 +27,7 @@ h1, h2, h3, h4, h5, h6, p{
     margin: 0;
 }
 
-h2, button{
+h2, button, ul, li{
     font-family: 'Oxanium', cursive;
 }
 
@@ -49,21 +54,319 @@ ul li{
 
 .header_inner{
     padding-top: 32px;
+    gap:150px
+    /* margin: auto;
+    max-width: 1465px; */
 }
+
+.header_inner ul li:hover{
+    color: #3BA6E5;
+}
+
 .nav_items{
     gap:34px;
     color: #FFFFFF;
+    cursor: pointer;
 }
 
-.header_inner button{
-    border-radius: 2px;
+.wallet_btn button{
+    position: relative;
+    outline: none;
+    border-radius: 8px;
     border: transparent 2px solid;
-    background: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%)padding-box,
-    linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%) border-box;
-    box-shadow: 0px 4px 97px rgba(118, 148, 255, 0.35);
+    background: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%);
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
     padding: 11px 35px;
+    white-space: nowrap;
+    z-index: 1;
+}
+.wallet_btn button:hover{
+    position: relative;
+    outline: none;
+    border-radius: 8px;
+    border: transparent 2px solid;
+    background: linear-gradient(92.38deg, #07ddf5 0.4%, #f129f8 55.32%, #1545f3 100%);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding: 11px 35px;
+    white-space: nowrap;
+    /* z-index: 1; */
+}
+
+.wallet_btn button::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    border-radius: 8px;
+    background-color: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%);
+    /* z-index: -1; */
+    transition: 200ms;
+}
+
+.wallet_btn button::after {
+    content: attr(data);
+    font-size: 18px;
+    background: #FFFFFF;
+   -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms
+  }
+
+.wallet_btn button:hover::after{
+    color: white;
+  }
+
+
+.banner_inner{
+    padding-top: 50px;
+    align-items: center;
+}
+
+.banner_heading{
+    /* padding-left: 80px; */
+    /* padding-top: 126px; */
+    /* padding-bottom: 65px; */
+    /* align-items: ; */
+}
+
+.banner_heading h1{
+    font-weight: 700;
+    font-size: 98px;
+    line-height: 129px;
+    text-transform: capitalize;
+    background: linear-gradient(94.42deg, #B40FE7 1.13%, #3BACE2 86.27%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Oxanium', cursive;
+    margin-bottom: 65px;
+}
+
+.banner_heading h1 > span {
+    background-image: url(/assets/images/Ellipse.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 43px;
+    background-position: bottom 15% center;
+}
+
+.banner_inner p{
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.icon {
+    /* color: #AB0000; */
+    background: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icon img{
+    height: 17px;
+    width: 17px;
+}
+
+.wallet_btn h5{
+    font-family: 'Gilroy-Medium';
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.follower{
+    gap: 48px;
+    margin-top: 40px;
+}
+
+.follower p{
+    font-size: 28px;
+    line-height: 33px;
+    color: #FFFFFF;
+    font-family: 'Gilroy-SemiBold';
+}
+
+.line{
+    background: #E7ECFF;
+    border: 1px solid #E7ECFF;
+    height: 60px;
+}
+
+.img-banner img{
+    height: 732px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:2560px) {
+    .mobile-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .mobile-container {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+    .header_inner{
+        display: none !important;
+    }
+
+    .mobile-container {
+        display: block !important;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background: rgba(116, 112, 112, 0.445);
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .topnav :hover {
+        background: rgba(116, 112, 112, 0.445);
+    }
+
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav img {
+        height: 50px;
+    }
+
+    .topnav a {
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+    }
+
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 8px;
+        background: none;
+        color: #fff;
+    }
+
+    .topnav a.icon:hover {
+        background: rgba(116, 112, 112, 0.445);
+        color: #fff;
+    }
+
+    .topnav button {
+        display: block;
+        margin-left: 15px;
+        border-radius: 2px;
+        margin-top: 10px;
+        position: relative;
+        outline: none;
+        border-radius: 2px;
+        border: transparent 2px solid;
+        background: linear-gradient(45deg, #C732CD, #0CA8B8);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        padding: 11px 35px;
+        white-space: nowrap;
+    }
+
+    .topnav button::before{
+        content: "";
+        position: absolute;
+        background: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%);
+    }
+
+    .topnav button::after {
+        content: attr(data);
+        font-size: 18px;
+        background: linear-gradient(to left, #00FFA3, #DC1FFF);
+       -webkit-background-clip: text;
+        color: transparent;
+        transition: 200ms
+      }
+
+    .topnav button:hover::before {
+        opacity: 50%;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+      }
+
+    .topnav button:hover::after{
+        color: white;
+      }
+
+    /* .topnav button:hover {
+        background: linear-gradient(45deg, #C732CD, #0CA8B8);
+        color: #fff;
+    } */
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        transition: 0.4s all linear;
+    }
+
+    .topnav :hover {
+        background-color: rgba(116, 112, 112, 0.445);
+    }
+
+    .active {
+        background-color: #3b4642;
+        color: white;
+    }
+
+    
+}
+
+@media screen and (max-width:768px) {
+   
+   
 }
