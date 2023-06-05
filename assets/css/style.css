@@ -32,7 +32,7 @@ h2, button, ul, li{
 }
 
 h6{
-    font-family: 'Gilroy-SemiBold';
+    font-family: 'Gilroy-SemiBold', sans-serif;
 }
 
 p{
@@ -54,9 +54,6 @@ ul li{
 
 .header_inner{
     padding-top: 32px;
-    gap:150px
-    /* margin: auto;
-    max-width: 1465px; */
 }
 
 .header_inner ul li:hover{
@@ -122,19 +119,12 @@ ul li{
 
 .wallet_btn button:hover::after{
     color: white;
-  }
+}
 
 
 .banner_inner{
     padding-top: 50px;
     align-items: center;
-}
-
-.banner_heading{
-    /* padding-left: 80px; */
-    /* padding-top: 126px; */
-    /* padding-bottom: 65px; */
-    /* align-items: ; */
 }
 
 .banner_heading h1{
@@ -205,8 +195,8 @@ ul li{
 }
 
 .line{
-    background: #E7ECFF;
-    border: 1px solid #E7ECFF;
+    /* background: #E7ECFF; */
+    border-left: 1px solid #E7ECFF;
     height: 60px;
 }
 
@@ -214,11 +204,58 @@ ul li{
     height: 732px;
 }
 
+.banner_inner{
+    margin-bottom: 156px;
+}
 
 
+.about__img img{
+  text-align: center;
+}
+
+.about_us_inner_top{
+    margin-bottom: 40px;
+}
 
 
+.about__us__content h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    background: linear-gradient(97.12deg, #FF56F6 18.19%, #B936EE 39.69%, #3BACE2 72.03%, #406AFF 99.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 35px;
+}
 
+.about__us__content p{
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.inner_box{
+    background: #08142B;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.inner_box h2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.inner_box p{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+}
 
 
 
@@ -245,10 +282,37 @@ ul li{
     }
 }
 
+@media screen and (max-width:1199px) {
+    .nav_items {
+        gap: 20px;
+    }
+}
+
 @media screen and (max-width:1024px) {
+
+   
+
+    
+}
+
+@media screen and (max-width:764px) {
+
+    .img-banner{
+        display: none;
+    }
+
+    .banner_inner{
+        margin-bottom: 30px;
+    }
+
+    .about__img{
+        display: none;
+    }
+
 
     .header_inner{
         display: none !important;
+       
     }
 
     .mobile-container {
@@ -362,11 +426,11 @@ ul li{
         background-color: #3b4642;
         color: white;
     }
-
-    
+   
 }
 
-@media screen and (max-width:768px) {
-   
-   
+@media screen and (max-width:425px) {
+    /* .about__us__content h2{
+
+    } */
 }
