@@ -209,6 +209,10 @@ ul li{
 }
 
 
+.about__us{
+    margin-bottom: 200px;
+}
+
 .about__img img{
   text-align: center;
 }
@@ -222,7 +226,7 @@ ul li{
     font-weight: 700;
     font-size: 64px;
     line-height: 80px;
-    background: linear-gradient(97.12deg, #FF56F6 18.19%, #B936EE 39.69%, #3BACE2 72.03%, #406AFF 99.34%);
+    background: linear-gradient(97.12deg, #FF56F6 18.19%, #B936EE 23.69%, #3BACE2 72.03%, #406AFF 99.34%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -239,14 +243,16 @@ ul li{
     background: #08142B;
     border-radius: 10px;
     text-align: center;
+    padding: 4px 80px 45px 80px;
 }
 
 .inner_box h2{
     font-weight: 600;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 35px;
     color: #FFFFFF;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .inner_box p{
@@ -257,6 +263,106 @@ ul li{
     text-align: center;
 }
 
+.how_work{
+    margin-bottom: 200px;
+}
+
+.work_it{
+    text-align: center;
+}
+
+.work_it h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    background: linear-gradient(97.12deg, #FF56F6 18.19%, #B936EE 39.69%, #3BACE2 72.03%, #406AFF 99.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+}
+
+.work_it p{
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.top_setup{
+    gap: 25px;
+}
+
+.work__setup{
+    background: linear-gradient(#090621, #090621) padding-box,linear-gradient(142.52deg, #31A6D8 14.28%, #090621 82.42%) border-box;
+    border: 1.5px solid transparent;
+    border-radius: 120px 120px 0px 0px;
+}
+
+.work__setup img{
+    padding: 78px 55px;
+}
+
+.work_content{
+    width: 302px;
+    margin-top: auto;
+}
+
+.work_content h2{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 35px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.work_content p{
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+
+.top_setup{
+    margin-bottom: 42px;
+}
+
+.invisible_box{
+    width: 213px;
+}
+
+.road__map__inner h2{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    background: linear-gradient(97.12deg,  #FF56F6 44.19%, #B936EE 44.69%, #3BACE2 72.03%, #406AFF 99.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+
+}
+
+
+.footer__all{
+    background-color: #050C24;
+    padding-top: 106px;
+}
+
+.logo__content__footer{
+    width: 406px;
+}
+
+.logo__content__footer img{
+    margin-bottom: 30px;
+}
+
+.logo__content__footer p{
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
 
 
 
