@@ -45,7 +45,7 @@ ul{
 }
 
 ul li{
-    list-style: none;
+    /* list-style: none; */
 }
 
 .container{
@@ -54,6 +54,7 @@ ul li{
 
 .header_inner{
     padding-top: 32px;
+    list-style: none;
 }
 
 .header_inner ul li:hover{
@@ -346,12 +347,9 @@ ul li{
 
 .footer__all{
     background-color: #050C24;
-    padding-top: 106px;
+    /* padding-top: 106px; */
 }
 
-.logo__content__footer{
-    width: 406px;
-}
 
 .logo__content__footer img{
     margin-bottom: 30px;
@@ -365,12 +363,248 @@ ul li{
 }
 
 
+.find__us h2{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #EEEEEE;
+    margin-bottom: 25px;
+}
+
+.find__us img{
+    cursor: pointer;
+    transition: 0.4s ease-in-out;;
+}
+
+.find__us img:hover{
+    
+    transform: scale(1.02);
+    cursor: pointer
+}
+
+
+.social_links {
+    gap: 22px;
+} 
+
+.footer__exe a{
+    text-decoration: none;
+}
+
+
+.footer__exe ul li:first-child {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    color: #EEEEEE;
+    list-style: none;
+    margin-bottom: 25px;
+    
+}
+
+.footer__exe ul li, a{
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    font-family: 'Gilroy-Regular', sans-serif;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.footer__exe ul li, a:hover{
+    color: #3BA6E5;
+}
+
+hr{
+    border: 1px solid #170B37;
+}
+
+.footer__bottom{
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.foo_bottom_inner{
+    gap: 67px;
+}
+
+.copy__right p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    font-family: 'Oxanium', cursive;
+    text-align: center;
+}
+
+.term a{
+    font-family: 'Oxanium';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.term a:hover{
+    text-decoration: underline;
+}
+
+.copy__right{
+    padding-left: 255px;
+}
 
 
 
 
+/* join Us */
+.join__us{
+    margin-bottom: 200px;
+}
+.join_us_inner{
+    background-image: url(../images/join_our_community.png);
+    background-repeat: no-repeat;
+    padding-top: 107px;
+    padding-bottom: 107px;
+    border-radius: 30px;
+}
+
+.join_us_inner h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+
+.join_us_inner p{
+    font-family: 'Gilroy-SemiBold';
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+.email__input{
+    max-width: 428px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.email__input input{
+    border: 1px solid #FFFFFF80;
+    background: #090621;
+    outline: none;
+    border-radius: 32.5px;
+    height: 65px;
+}
+
+.email__input input::placeholder{
+    /* padding: 23px 0px 23px 32px; */
+    padding-top: 23px;
+    padding-bottom: 23px;
+    padding-left: 32px;
+}
+
+.sub__btn{
+    border: 1px solid transparent !important;
+    background: linear-gradient(#54009D, #54009D) padding-box,linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%) border-box;
+    border-radius: 32px;
+    color: #FFFFFF;
+    padding: 20px 36px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 20px;
+    line-height: 23px;
+    position: absolute;
+    right: 0;
+
+}
 
 
+/* join Us End */
+
+
+
+/* FAQ */
+
+.faq{
+    margin-bottom: 200px;
+}
+
+.faq__content h3{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 69px;
+    background: linear-gradient(97.12deg, #FF56F6 43.19%, #B936EE 53.69%, #3BACE2 66.03%, #406AFF 79.34%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    font-family: 'Oxanium';
+}
+
+
+
+.accordion-item {
+    margin: 20px !important;
+    /* border: 1px solid red; */
+    border-radius: 25px;
+    border: 1px solid #380A60;
+    background-color: #090621;
+}
+
+
+.accordion-item:first-of-type {
+    border-radius: 25px;
+}
+
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid #380A60;
+}
+
+.accordion-button {
+    border-radius: 25px;
+    font-family: 'Gilroy-SemiBold';
+    font-size: 26px;
+    line-height: 30px;
+    color: #EFEFFF !important;
+    background-color: #090621;
+}
+
+.accordion {
+    font-family: 'Gilroy-Regular';
+    font-size: 22px;
+    line-height: 26px;
+    --bs-accordion-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+.accordion-item:last-of-type {
+    border-radius: 25px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: unset;
+    box-shadow: none;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-radius: 25px;
+}
+.accordion-item:first-of-type .accordion-button{
+    border-radius: 25px;
+}
+
+.accordion {
+    border: 0;
+}
+
+.accordion-header {
+    border: 0;
+}
+
+/* FAQ End */
 
 
 
