@@ -1104,6 +1104,27 @@ hr {
         display: none;
     }
 
+    /* About us */
+
+    .about__us__content{
+        text-align: center;
+    }
+
+    /* About us end */
+
+    /* How it Works */
+
+    .work_it p{
+        margin-bottom: 40px;
+    }
+
+    .work_content {
+        width: 200px;
+    }
+
+
+    /* How it Works end */
+
     /* Road Map */
     .map_inner_left{
         display: flex;
@@ -1128,6 +1149,8 @@ hr {
         display: none;
     }
 
+
+
     .left__box::before {
         display: none;
     }
@@ -1136,8 +1159,16 @@ hr {
         display: none;
     }
 
+    .left__box_content{
+        width: 400px;
+    }
+
     .left__box_content::before {
         display: none;
+    }
+
+    .right_box_content {
+        width: 400px;
     }
 
     .right__box::before {
