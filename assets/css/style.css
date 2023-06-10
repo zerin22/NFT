@@ -74,63 +74,26 @@ ul {
     list-style: none;
 }
 
-.wallet_btn button {
-    position: relative;
-    outline: none;
-    border-radius: 8px;
-    border: transparent 2px solid;
-    background: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%);
+
+.wallet_btn button{
+    border: 2px solid transparent !important;
+    background: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%) padding-box, linear-gradient(92.23deg, #406AFF 21.43%, #FF56F6 73.04%) border-box;
+    border-radius: 10px;
+    color: #FFFFFF;
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    font-family: 'Oxanium';
     padding: 11px 35px;
-    white-space: nowrap;
-    z-index: 1;
+    transition: 0.4s ease-in;
 }
 
 .wallet_btn button:hover {
-    position: relative;
-    outline: none;
-    border-radius: 8px;
-    border: transparent 2px solid;
-    background: linear-gradient(92.38deg, #07ddf5 0.4%, #f129f8 55.32%, #1545f3 100%);
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    color: #FFFFFF;
-    padding: 11px 35px;
-    white-space: nowrap;
-    /* z-index: 1; */
+    background: linear-gradient(#380A60, #380A60) padding-box, linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%) border-box;
 }
-
-.wallet_btn button::before {
-    content: "";
-    position: absolute;
-    left: 2px;
-    right: 2px;
-    top: 2px;
-    bottom: 2px;
-    border-radius: 8px;
-    background-color: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%);
-    /* z-index: -1; */
-    transition: 200ms;
-}
-
-.wallet_btn button::after {
-    content: attr(data);
-    font-size: 18px;
-    background: #FFFFFF;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition: 200ms
-}
-
-.wallet_btn button:hover::after {
-    color: white;
-}
-
 /* header Section end */
+
+
 
 /* Banner section */
 
@@ -142,7 +105,7 @@ ul {
 .banner_heading h1 {
     font-weight: 700;
     font-size: 98px;
-    line-height: 129px;
+    line-height: 123px;
     text-transform: capitalize;
     background: linear-gradient(94.42deg, #B40FE7 1.13%, #3BACE2 86.27%);
     -webkit-background-clip: text;
@@ -227,7 +190,7 @@ ul {
 /* About Us */
 
 .about__us {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .about__img img {
@@ -237,7 +200,6 @@ ul {
 .about_us_inner_top {
     margin-bottom: 40px;
 }
-
 
 .about__us__content h2 {
     font-weight: 700;
@@ -261,6 +223,14 @@ ul {
     border-radius: 10px;
     text-align: center;
     padding: 4px 80px 45px 80px;
+    transition: 0.4s ease-in-out;
+    overflow: hidden;
+}
+
+.inner_box:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+   
 }
 
 .inner_box h2 {
@@ -287,7 +257,7 @@ ul {
 /* How It Works */
 
 .how_work {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .work_it {
@@ -359,7 +329,7 @@ ul {
 /* Road Map */
 
 .road_map {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .road__map__inner h2 {
@@ -529,16 +499,6 @@ ul {
     top: 24px;
 }
 
-
-/* .rightback_box::before {
-    position: absolute;
-    content: '';
-    border: 1px dashed red;
-    top: 50%;
-    width: 54%;
-    left: -250px;
-} */
-
 .right__num {
     text-align: right;
     padding-right: 50px;
@@ -614,7 +574,7 @@ ul {
 
 /* Team  */
 .team_member {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .member_inner_content h2 {
@@ -633,11 +593,18 @@ ul {
     padding: 20px 18px;
     background-color: #19172F;
     border-radius: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.team__inner___box:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .team__inner___box img {
     border-radius: 25px;
 }
+
 
 .team__bottom {
     gap: 15px;
@@ -650,15 +617,15 @@ ul {
 
 .team__bottom {
     position: absolute;
-    bottom: 20px;
-    left: 17px;
+    bottom: 16px;
+    left: 14px;
     border-radius: 0;
 }
 
 
 .member_name {
     background: #19172F;
-    padding: 6px 25px 0px 12px;
+    padding: 6px 25px 6px 12px;
     border-radius: 0px 10px 0px 25px;
 }
 
@@ -686,7 +653,7 @@ ul {
 /* FAQ */
 
 .faq {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .faq__content h3 {
@@ -764,13 +731,24 @@ ul {
     border-radius: 25px;
 }
 
+.accordion-button::after {
+    background-image: url(../images/Arrow_02.png);
+    
+}
+
+
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images/Arrow_02.png);
+}
+
 /* FAQ End */
 
 
 
 /* join Us */
 .join__us {
-    margin-bottom: 200px;
+    margin-bottom: 160px;
 }
 
 .join_us_inner {
@@ -814,13 +792,6 @@ ul {
     color: white;
     padding: 10px 32px;
 }
-
-/* .email__input input::placeholder{
-    padding: 23px 0px 23px 32px;
-    padding-top: 23px;
-    padding-bottom: 23px;
-    padding-left: 32px;
-} */
 
 .sub__btn {
     border: 1px solid transparent !important;
@@ -969,15 +940,6 @@ hr {
 
 
 
-
-
-
-
-
-
-
-
-
 @media screen and (max-width:2560px) {
     .mobile-container {
         display: none;
@@ -988,6 +950,10 @@ hr {
     .mobile-container {
         display: none;
     }
+
+    .img-banner img{
+        transform: none;
+    }
 }
 
 @media screen and (max-width:1199px) {
@@ -996,22 +962,14 @@ hr {
     }
 
     .img-banner img {
-        height: 732px;
+        object-fit: contain;
     }
 }
 
 @media screen and (max-width:1024px) {
     
-    .img-banner{
-        display: none;
-    }
-
     .banner_inner {
-        margin-bottom: 30px;
-    }
-
-    .about__img {
-        display: none;
+        margin-bottom: 20px;
     }
 
 
@@ -1067,55 +1025,10 @@ hr {
         color: #fff;
     }
 
-    .topnav button {
-        display: block;
-        margin-left: 15px;
-        border-radius: 2px;
-        margin-top: 10px;
-        position: relative;
-        outline: none;
-        border-radius: 2px;
-        border: transparent 2px solid;
-        background: linear-gradient(45deg, #C732CD, #0CA8B8);
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 22px;
-        color: #FFFFFF;
-        padding: 11px 35px;
-        white-space: nowrap;
+    .wallet_btn button{
+        margin-left: 10px;
+        margin-bottom: 10px;
     }
-
-    .topnav button::before {
-        content: "";
-        position: absolute;
-        background: linear-gradient(92.38deg, #0CA8B8 0.4%, #C732CD 55.32%, #406AFF 100%);
-    }
-
-    .topnav button::after {
-        content: attr(data);
-        font-size: 18px;
-        background: linear-gradient(to left, #00FFA3, #DC1FFF);
-        -webkit-background-clip: text;
-        color: transparent;
-        transition: 200ms
-    }
-
-    .topnav button:hover::before {
-        opacity: 50%;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-    }
-
-    .topnav button:hover::after {
-        color: white;
-    }
-
-    /* .topnav button:hover {
-        background: linear-gradient(45deg, #C732CD, #0CA8B8);
-        color: #fff;
-    } */
 
     .topnav a:hover {
         background-color: #ddd;
@@ -1131,6 +1044,23 @@ hr {
         background-color: #3b4642;
         color: white;
     }
+
+    .banner_heading{
+        text-align: center;
+    }
+
+    .img-banner{
+        display: none;
+    }
+
+    .about__img {
+        object-fit: contain;
+    }
+    
+    .social_links {
+        gap: 0;
+    }
+
 }
 
 @media screen and (max-width:764px) {
@@ -1152,9 +1082,18 @@ hr {
         text-align: center;
     }
 
+    .img-banner{
+        display: none;
+    }
+
+    .btn__video{
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .follower{
         flex-direction: column;
-        gap: 20px;
+        gap: 0;
     }
 
     .follower p{
@@ -1164,6 +1103,85 @@ hr {
     .line{
         display: none;
     }
+
+    /* Road Map */
+    .map_inner_left{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .map_inner_right{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .map_inner_left{
+        margin-left: 10px;
+    }
+
+    .leftback__box{
+        display: none;
+    }
+    .rightback_box{
+        display: none;
+    }
+
+    .left__box::before {
+        display: none;
+    }
+
+    .left__box::after{
+        display: none;
+    }
+
+    .left__box_content::before {
+        display: none;
+    }
+
+    .right__box::before {
+        display: none;
+    }
+
+    .right__box::after {
+        display: none;
+    }
+
+    .right_box_content::before {
+        display: none;
+    }
+    /* Road Map End */
+
+    /* footer */
+    .foo_bottom_inner {
+        flex-direction: column;
+    }
+
+    .logo__content__footer{
+       text-align: center;
+    }
+
+    .footer__exe{
+        text-align: center;
+    }
+
+    .find__us h2{
+        text-align: center;
+    }
+
+    .social_links {
+        justify-content: center;
+    }
+
+    .foo_bottom_inner {
+        gap: 25px;
+    }
+
+    .copy__right {
+        padding: 0;
+    }
+    /* footer end */
 
 }
 
