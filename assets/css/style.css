@@ -1805,7 +1805,7 @@ hr {
 .animated_Banner{
     animation-name: animatedBaner ;
     animation-duration: 4s; /* or: Xms */
-    animation-iteration-count: infinite;
+    animation-iteration-count: 3;
     animation-direction: alternate; /* or: normal */
     animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
     animation-fill-mode: forwards; /* or: backwards, both, none */
@@ -1820,3 +1820,5 @@ hr {
 
 
 /* key frame animation */
+
+
