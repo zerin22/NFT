@@ -888,7 +888,7 @@ ul {
     background: linear-gradient(#54009D, #54009D) padding-box, linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%) border-box;
     border-radius: 32px;
     color: #FFFFFF;
-    padding: 14px 36px;
+    padding: 13px 36px;
     font-family: 'Gilroy-SemiBold';
     font-size: 20px;
     line-height: 23px;
@@ -1583,7 +1583,7 @@ hr {
     }
 
     .sub__btn{
-        padding: 12px 36px;
+        padding: 13px 36px;
     }
 
     .join__us {
