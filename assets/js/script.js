@@ -11,14 +11,40 @@ function myFunction() {
 
 /* GSAP Anumation */
 
- gsap.from("#banner__animation", {x: '-100%', duration: 4});
- gsap.fromTo("#bn_des", {opacity: 0}, {opacity: 1, duration: 5});
+gsap.from("#banner__animation", {x: '-100%', duration: 4});
+gsap.fromTo("#bn_des", {opacity: 0}, {opacity: 1, duration: 5});
 
-// var tl = gsap.timeline({repeat: Infinity, repeatDelay: 0});
+
+gsap.registerPlugin(ScrollTrigger);
+
+var tesla = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".panel",
+      start:"top center",
+      toggleActions:'restart none restart none'
+    } ,
+});
+
+tesla.from("#how_work", {
+  x: "-100%",
+  duration:6
+});
+
+
+
+// gsap.from("#how_work", {
+//   scrollTrigger: {
+//           trigger: "#how_work",
+//           start:"top center",
+//           toggleActions:'restart none restart none'
+//         } ,
+
+//   x: "-100%",
+//   duration:4
+// });
+
+
 var tl = gsap.timeline({repeat: Infinity, duration:1});
-
-tl.fromTo("#how_work", { opacity: 0, scale: 0, rotation:720 }, {  opacity: 1, scale: 1, rotation:0 });
-
 
 tl.to("#how01", {x: 20 });
 tl.to("#how01", {y: 50});
@@ -33,8 +59,14 @@ tl.to("#how03", {y: 50}, '<.5');
 tl.to("#how03", {opacity: 0}, '<.5');
 
 
-
-
-// gsap.to(#, { duration: 2.5, ease: "bounce.out", y: -500 });
+gsap.from("#about__des", {
+  scrollTrigger: {
+    trigger: "#about__des",
+    start:"top center",
+    toggleActions:'restart none restart none'
+  } ,
+  x: "80%",
+  duration:2
+});
 
 /* GSAP Anumation End */
