@@ -7,8 +7,7 @@ function myFunction() {
     }
   }
 
-
-
+  
 /* GSAP Anumation */
 
 gsap.from("#banner__animation", {x: '-100%', duration: 4});
