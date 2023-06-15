@@ -484,6 +484,12 @@ ul {
     z-index: -9999;
     top: -12px;
     left: -12px;
+    transition: 0.4s ease-in-out;
+}
+
+.double__box_right:hover .timeline_back_right{
+    top: 24px;
+    left: 12px;
 }
 
 .timeline_back_left {
@@ -496,6 +502,12 @@ ul {
     z-index: -99999;
     top: 24px;
     left: -12px;
+    transition: 0.4s ease-in-out;
+}
+
+.double__box_left:hover .timeline_back_left{
+    top: -12px;
+    left: 12px;
 }
 
 .empty__inner {
@@ -509,6 +521,7 @@ ul {
 
 .double__box_left {
     position: relative;
+    /* transition: 0.4s ease-in-out; */
 }
 
 .line_middle {
@@ -658,7 +671,7 @@ ul {
 }
 
 .view__btn:hover {
-    background: linear-gradient(#090621, #090621) padding-box, linear-gradient(142.52deg, #3C79D4 14.28%, #FFA6FA 82.42%) border-box;
+    background: linear-gradient(#380A60, #380A60) padding-box, linear-gradient(142.52deg, #3C79D4 14.28%, #FFA6FA 82.42%) border-box;
 }
 
 .panel {
@@ -1896,7 +1909,7 @@ hr {
     scale: 1.1 !important;
 } */
 
-.slideright:hover{
+.double__box_right:hover .timeline_back_right:hover{
 
     animation-name: animatedRoadMapRight;
     animation-duration: 2s;
@@ -1907,26 +1920,9 @@ hr {
     animation-delay: 2s;
 }
 
-.timeline__content{
-    cursor: pointer;
-}
-/* .timeline__content:hover {
-    scale: 1.01 !important;
-    
-} */
 
 
 @keyframes animatedRoadMapRight {
-
-    /* 0%{
-        top: -12px;
-        left: -12px;
-    }
-
-    100%{
-        top: 24px;
-        left: 12px;
-    } */
     100% {
         top: -12px;
         left: -12px;
@@ -1952,8 +1948,3 @@ hr {
 
 
 
-.double__box_left:hover .timeline_back_left{
-    /* background: #6b61ad; */
-    top: -12px;
-    left: 12px;
-}
